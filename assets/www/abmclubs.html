@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>TnG</title>
+<link rel="stylesheet" href="css/jquery.mobile-1.3.1.min.css">
+
+<!-- Extra Codiqa features -->
+<link rel="stylesheet" href="css/codiqa.ext.css">
+
+<!-- jQuery and jQuery Mobile -->
+<script src="libraries_js/jquery-1.10.1.min.js"></script>
+<script src="libraries_js/jquery.mobile-1.3.1.min.js"></script>
+
+<!-- Extra Codiqa features -->
+<script src="libraries_js/codiqa.ext.js"></script>
+<script src="cordova.js"></script>
+<script src="js/helperFunctions.js"></script>
+<script src="js/index.js"></script>
+</head>
+<body>
+<!-- Play -->
+<div data-role="page" id="abmclubspage">
+  <div data-theme="b" data-role="header"> <a href="setup.html" data-theme="a">Back</a>
+    <h5> Setup </h5>
+  </div>
+  <div data-role="content">
+    <div>
+      <h2 data-mce-style="text-align: center;" style="text-align: center;"> <b> Clubs </b> </h2>
+    </div>
+    <table width="100%" align="center" border="1">
+      <tr>
+        <td>Name</td>
+        <td>Description</td>
+        <td>Created</td>
+        <td>Actions</td>
+      </tr>
+      <tr>
+        <td>3-Wood</td>
+        <td>Here goes the description</td>
+        <td>06-27-2013</td>
+        <td><a href="#editPopup" data-rel="popup" data-position-to="window">Edit</a> | <a href="#removePopup" data-rel="popup" data-position-to="window">Remove</a></td>
+      </tr>
+      <tr>
+        <td>4-Iron</td>
+        <td>Here goes the description</td>
+        <td>06-27-2013</td>
+        <td><a href="#editPopup" data-rel="popup" data-position-to="window">Edit</a> | <a href="#removePopup" data-rel="popup" data-position-to="window">Remove</a></td>
+      </tr>
+      <tr>
+        <td>Putter</td>
+        <td>Here goes the description</td>
+        <td>06-27-2013</td>
+        <td><a href="#editPopup" data-rel="popup" data-position-to="window">Edit</a> | <a href="#removePopup" data-rel="popup" data-position-to="window">Remove</a></td>
+      </tr>
+    </table>
+    <div data-role="popup" id="editPopup" data-theme="a" data-overlay-theme="a">
+      <div data-role="header" data-theme="a">
+        <h1>Edit Club</h1>
+      </div>
+      <div data-role="content" data-theme="d" style="padding:10px 20px;">
+        <label for="clubName" >Name:</label>
+        <input type="text" name="clubName" id="clubName" value="">
+        <label for="clubDesc" >Description:</label>
+        <textarea name="clubDesc" id="clubDesc" value=""></textarea>
+        <a data-role="button" data-theme="b" href="#" id="btnSaveClub">Save</a> </div>
+    </div>
+    <div data-role="popup" id="removePopup" data-theme="a" data-overlay-theme="a">
+      <div data-role="header" data-theme="a">
+        <h1>Delete Club?</h1>
+      </div>
+      <div data-role="content" data-theme="d" style="padding:10px 20px;">
+        <h3 class="ui-title">Are you sure you want to delete this club?</h3>
+        <p>This action cannot be undone.</p>
+        <a data-role="button" data-theme="c" href="#" id="btnCancel" data-inline="true">Cancel</a> <a data-role="button" data-theme="b" href="#" id="btnDelete" data-inline="true">Delete</a> </div>
+    </div>
+    <br>
+    <div> <a data-role="button" data-theme="b" href="#" id="btnAddClub"> Add Club </a> </div>
+  </div>
+</div>
+</body>
+</html>

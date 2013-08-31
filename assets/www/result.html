@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>TnG</title>
+<link rel="stylesheet" href="css/jquery.mobile-1.3.1.min.css">
+
+<!-- Extra Codiqa features -->
+<link rel="stylesheet" href="css/codiqa.ext.css">
+
+<!-- jQuery and jQuery Mobile -->
+<script src="libraries_js/jquery-1.10.1.min.js"></script>
+<script src="libraries_js/jquery.mobile-1.3.1.min.js"></script>
+
+<!-- Extra Codiqa features -->
+<script src="libraries_js/codiqa.ext.js"></script>
+<script src="cordova.js"></script>
+<script src="js/helperFunctions.js"></script>
+<script src="js/index.js"></script>
+</head>
+<body>
+<!-- Result -->
+<div data-role="page" id="resultpage">
+  <div data-theme="a" data-role="header">
+    <h3> TalknGolf </h3>
+  </div>
+  <div data-role="content">
+    <div>
+      <h2 data-mce-style="text-align: center;" style="text-align: center;"> <b> What's next? </b> </h2>
+    </div>
+    <div class="ui-grid-a">
+      <div class="ui-block-a"> <a data-role="button" data-theme="b" href="club.html" id="btnNextStroke"> Next Stroke </a> </div>
+      <div class="ui-block-b"> <a data-role="button" data-theme="b" href="club.html" id="btnEndHole"> End Hole </a> </div>
+      <div class="ui-block-a"> <a data-role="button" data-theme="d" href="pause.html"> Pause </a> </div>
+      <div class="ui-block-b"> <a data-role="button" data-theme="d" href="index.html"> Exit </a> </div>
+    </div>
+    
+    <h4>Hole Log</h4>
+   <div data-role="collapsible-set" id="stats">
+	</div>
+
+    
+  </div>
+</div>
+</body>
+</html>
